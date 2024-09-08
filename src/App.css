@@ -1,0 +1,41 @@
+.App {
+  font-family: sans-serif !important;
+}
+
+/* src/App.css */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the App container takes at least the full viewport height */
+}
+
+.content {
+  flex: 1; /* Allows content area to expand and push footer to the bottom */
+  padding: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+  .content {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .content {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .content {
+    padding: 20px;
+  }
+}

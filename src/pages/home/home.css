@@ -1,0 +1,100 @@
+.posterImage {
+  height: 550px;
+  transition: all 4s ease-in-out;
+}
+
+.posterImage > img {
+  margin: auto;
+  display: block;
+  width: 100%;
+  transition: all 4s ease-in-out;
+}
+
+.posterImage__overlay {
+  position: absolute;
+  padding: 5rem;
+  bottom: 0px;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 1));
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.posterImage__overlay:hover {
+  opacity: 1;
+}
+
+.posterImage__title {
+  font-weight: 900;
+  font-size: 4rem;
+  margin-bottom: 0.4rem;
+  text-align: left;
+}
+
+.posterImage__runtime {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.posterImage__rating {
+  margin-left: 3rem;
+}
+
+.posterImage__description {
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  display: flex;
+  text-align: left;
+  width: 50%;
+}
+
+/* Hide list bullets for the carousel */
+.carousel .control-dots {
+  display: none; /* Hides the dots that indicate the slides */
+}
+
+.carousel ul {
+  list-style: none; /* Remove list bullets */
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .posterImage {
+    margin-top: 20px;
+    height: 300px;
+    width: 100%;
+    margin-bottom: -40px;
+    list-style-type: none !important;
+  }
+  .posterImage img {
+    height: 200px;
+    /* Adjust height for smaller screens */
+    list-style-type: none !important;
+  }
+  .posterImage__title {
+    font-size: 28px;
+    margin-left: 70px;
+    font-size: 22px;
+  }
+  .posterImage__runtime {
+    font-size: 16px;
+    margin-left: 70px;
+    font-size: 16px;
+    margin-bottom: -20px;
+  }
+  .posterImage__rating {
+    margin-left: 1rem;
+    margin-left: 20px;
+    font-size: 16px;
+  }
+  .posterImage__description {
+    display: none;
+  }
+}

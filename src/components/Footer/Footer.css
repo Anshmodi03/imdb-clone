@@ -1,0 +1,53 @@
+.footer {
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+/* For screens between 600px and 1024px (Tablets and Small Laptops) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .footer {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+/* For screens larger than 1024px (Desktops) */
+@media (min-width: 1025px) {
+  .footer {
+    font-size: 18px;
+    padding: 12px;
+  }
+}

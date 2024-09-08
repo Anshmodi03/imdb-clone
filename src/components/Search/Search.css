@@ -1,0 +1,193 @@
+/* Wrapper for positioning the search button and popup */
+.search-wrapper {
+  position: relative;
+}
+
+/* Style for the search button */
+.btn {
+  background: transparent;
+  border: none;
+  font-size: 24px; /* Slightly larger for better visibility */
+  color: white;
+  cursor: pointer;
+  transition: all 0.7s ease-in-out;
+}
+
+/* Hover effect for search button */
+.btn:hover {
+  background-image: linear-gradient(
+    to left top,
+    #ff5dc1,
+    #7cffc2,
+    #38f8ff,
+    #00c3ff,
+    #00ed92,
+    #ed63ff,
+    #ff0044,
+    #ff7c25,
+    #ff7800,
+    #82e500,
+    #add700,
+    #00ff0b
+  );
+  background-clip: text;
+  color: transparent;
+  border: none;
+  font-weight: 800;
+  transition: all 1s ease-in-out;
+}
+
+/* Popup styling */
+.search-popup {
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Darker background for contrast */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased shadow for depth */
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  transition: all 0.7s ease-in-out;
+}
+
+/* Container for input and buttons inside the popup */
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  gap: 1rem;
+  transition: all 0.7s ease-in-out;
+}
+
+/* Input field styling */
+.search-input {
+  border: none;
+  font-size: 16px;
+  padding: 10px;
+  flex: 1;
+  outline: none;
+  border-radius: 8px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  transition: all 0.7s ease-in-out;
+}
+
+/* Button inside the popup */
+.search-confirm-btn {
+  font-size: 20px; /* Same as search button */
+  color: #ffffff;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+  border-radius: 4px;
+}
+
+/* Close button inside the popup */
+.close-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Base styles here */
+
+/* Media query for tablets and smaller devices */
+@media (max-width: 768px) {
+  .btn {
+    font-size: 20px; /* Smaller font size for smaller screens */
+  }
+
+  .search-popup {
+    padding: 1rem;
+    margin-top: 40px;
+    margin-left: -230px;
+  }
+
+  .search-container {
+    flex-direction: row;
+    flex-flow: row;
+  }
+
+  .search-input {
+    flex-direction: column;
+    font-size: 14px; /* Smaller font size for smaller screens */
+    padding: 8px; /* Reduced padding */
+  }
+
+  .search-confirm-btn {
+    font-size: 18px; /* Smaller font size for consistency */
+    margin-left: 10px; /* Remove left margin when stacked */
+    margin-top: 0.5rem; /* Add margin-top for spacing */
+  }
+
+  .close-btn {
+    font-size: 18px; /* Smaller font size for smaller screens */
+    right: 5px; /* Adjust positioning */
+  }
+
+  .btn1 {
+    margin-right: -30px; /* Add margin-right for spacing */
+  }
+}
+
+/* Media query for mobile phones */
+@media (max-width: 480px) {
+  .btn {
+    font-size: 18px; /* Even smaller font size for very small screens */
+  }
+
+  .search-popup {
+    width: 90%; /* Reduce width to fit small screens */
+    padding: 0.5rem; /* Less padding */
+  }
+
+  .search-container {
+    gap: 0.25rem; /* Minimal gap between stacked elements */
+  }
+
+  .search-input {
+    font-size: 12px; /* Smaller font size for very small screens */
+    padding: 6px; /* Even smaller padding */
+  }
+
+  .search-confirm-btn {
+    font-size: 16px; /* Smaller font size for consistency */
+    margin-top: 0.25rem; /* Minimal margin-top */
+  }
+
+  .close-btn {
+    font-size: 16px; /* Smaller font size for very small screens */
+    right: 2px; /* Adjust positioning */
+  }
+}
+
+/* Media query for landscape orientation */
+@media (orientation: landscape) {
+  .search-popup {
+    width: 80%; /* Adjust width for landscape mode */
+  }
+
+  .search-container {
+    flex-direction: row; /* Keep elements in row for landscape */
+    gap: 1rem; /* Standard gap */
+  }
+
+  .search-input {
+    font-size: 16px; /* Standard font size */
+  }
+
+  .search-confirm-btn {
+    font-size: 20px; /* Standard font size */
+  }
+}
