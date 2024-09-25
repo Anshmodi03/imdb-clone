@@ -18,7 +18,7 @@ Check out the live demo of the website [here](https://anshmodi03-imdb-clone.verc
   
 ## 🖼️ Screenshots
 
-![Homepage](https://your-screenshot-link-here.com)  
+![Homepage](External-Images/landing-page.PNG)  
 *Homepage showcasing popular movies.*
 
 ![Movie Details](https://your-screenshot-link-here.com)  
